@@ -14,7 +14,13 @@ def main():
 
     # Crawl the URL and print the results
     result = crawler.crawl_page(url)
-    print(json.dumps(result, indent=2))
+
+    try:
+        with open("dist/output.json", "w") as file:
+            json.dump(result, file, indent=2)
+
+    except Exception as e:
+        print(f"Failed to output file:", e)
 
 
 if __name__ == "__main__":
