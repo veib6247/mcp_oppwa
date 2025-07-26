@@ -4,6 +4,8 @@ from web_crawler import WebCrawler
 
 
 def main():
+    """Test the webcrawler"""
+
     # Initialize the web crawler
     crawler = WebCrawler()
 
