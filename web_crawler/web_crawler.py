@@ -49,16 +49,16 @@ class WebCrawler:
                 'url': url,
                 'status_code': response.status_code,
                 'title': self._extract_title(soup),
-                # 'meta_description': self._extract_meta_description(soup),
+                'meta_description': self._extract_meta_description(soup),
                 'headings': self._extract_headings(soup),
                 'paragraphs': self._extract_paragraphs(soup),
-                # 'links': self._extract_links(soup, url),
-                # 'images': self._extract_images(soup, url),
+                'links': self._extract_links(soup, url),
+                'images': self._extract_images(soup, url),
                 'text_content': self._extract_clean_text(soup),
                 'structured_data': self._extract_structured_data(soup),
                 'tables': self._extract_tables(soup),
-                # 'forms': self._extract_forms(soup),
-                # 'crawl_timestamp': time.time()
+                'forms': self._extract_forms(soup),
+                'crawl_timestamp': time.time()
             }
 
             return page_data

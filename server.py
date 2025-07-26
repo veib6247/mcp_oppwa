@@ -41,11 +41,11 @@ def oppwa_transaction_reporting() -> dict[str, str]:
     return crawler.crawl_page("https://docs.oppwa.com/integrations/reporting/transaction")
 
 
-@mcp.tool()
-def prtpg_standard_checkout() -> dict[str, str]:
-    """Returns the details from the Standard Checkout integration page of the prtpg platform."""
-    crawler = WebCrawler()
-    return crawler.crawl_page("https://docs.prtpg.com/integration/standard-checkout.php")
+# @mcp.tool()
+# def prtpg_standard_checkout() -> dict[str, str]:
+#     """Returns the details from the Standard Checkout integration page of the prtpg platform."""
+#     crawler = WebCrawler()
+#     return crawler.crawl_page("https://docs.prtpg.com/integration/standard-checkout.php")
 
 
 # @mcp.tool()
